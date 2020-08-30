@@ -1,0 +1,19 @@
+{
+  "envId": "vue-blog-6g4zizfg49023f8a",
+  "version": "2.0",
+  "$schema": "https://framework-1258016615.tcloudbaseapp.com/schema/latest.json",
+  "functionRoot": "./functions",
+  "functions": [],
+  "framework": {
+    "name": "vue-blog",
+    "plugins": {
+      "vuepress": {
+        "use": "@cloudbase/framework-plugin-website",
+        "inputs": {
+          "buildCommand": "npm run docs:build",
+          "outputPath": "public"
+        }
+      }
+    }
+  }
+}
