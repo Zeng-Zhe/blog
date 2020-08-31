@@ -1,3 +1,5 @@
-# hello,word
+---
+home: true
+bgImage: /052.jpg
 
-## 132123123
+---
