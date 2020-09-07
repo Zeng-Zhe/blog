@@ -6,20 +6,21 @@ module.exports = {
   repo: 'https://github.com/Zeng-Zhe', // 添加 github 链接
   evergreen: true, //禁止兼容低版本浏览器
 
-  plugins: [
-    [
-      'vuepress-plugin-comment',
-      {
-        choosen: 'valine',
-        // options选项中的所有参数，会传给Valine的配置
-        options: {
-          el: '#valine-vuepress-comment',
-          appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz',
-          appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc',
-        },
-      },
-    ],
-  ],
+  // plugins: [
+  //   [
+  //     'vuepress-plugin-comment',
+  //     {
+  //       choosen: 'valine',
+  //       // options选项中的所有参数，会传给Valine的配置
+  //       options: {
+  //         el: '#valine-vuepress-comment',
+  //         appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz',
+  //         appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc',
+  //         visitor: true,
+  //       },
+  //     },
+  //   ],
+  // ],
   sidebar: true,
   themeConfig: {
     type: 'blog',
@@ -56,6 +57,10 @@ module.exports = {
         location: 3, // 在导航栏菜单中所占的位置，默认3
         text: '标签', // 默认文案 “标签”
       },
+    },
+    valineConfig: {
+      appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz', // your appId
+      appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc', // your appKey
     },
   },
 };
