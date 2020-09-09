@@ -5,7 +5,6 @@ module.exports = {
   dest: 'public', // 设置输出目录
   base: '/', // 设置站点根路径
   theme: 'vdoing',
-
   evergreen: true, //禁止兼容低版本浏览器
   locales: {
     '/': {

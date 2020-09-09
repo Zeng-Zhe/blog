@@ -12,8 +12,7 @@ module.exports = [
   { text: '留言板', link: '/messageBoard/', icon: 'reco-suggestion' },
   {
     text: '更多',
-    link: '/more/',
-    items: [{ text: '面试', link: '/more/面试' }],
+    items: [{ text: '博客建设', link: '/pages/16e149/' }],
   },
   { text: '关于我', link: '/about/', icon: 'reco-account' },
 ];
