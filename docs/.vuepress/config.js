@@ -5,6 +5,7 @@ module.exports = {
   dest: 'public', // 设置输出目录
   base: '/', // 设置站点根路径
   theme: 'vdoing',
+  port: '0.0.0.0',
   evergreen: true, //禁止兼容低版本浏览器
   locales: {
     '/': {
@@ -23,9 +24,9 @@ module.exports = {
     blogger: {
       // 博主信息，显示在首页侧边栏
       avatar:
-        'https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
+        'https://cdn.jsdelivr.net/gh/Zeng-Zhe/image_store/blog/20200913213508.png',
       name: 'Gorvey',
-      slogan: '前端界的小学生',
+      slogan: '菜鸡前端工程师',
     },
     author: {
       // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
