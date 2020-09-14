@@ -7,8 +7,16 @@ module.exports = [
       { text: '建立自己的知识体系', link: '/pages/b315f9/' },
       {
         text: '知识体系',
-        link: '/pages/6fa45d/',
         items: [{ text: 'JavaScript进阶', link: '/pages/7264d1/' }],
+      },
+      {
+        text: '笔记',
+        items: [
+          {
+            text: '《JavaScript高级程序设计》读书笔记',
+            link: '/pages/5bd01e/',
+          },
+        ],
       },
     ],
   },
