@@ -1,3 +1,13 @@
 {
-  "cSpell.words": ["cloudbase", "gorvey", "reco", "vuepress", "zizfg"]
+  "cSpell.words": [
+    "cloudbase",
+    "gorvey",
+    "instanceof",
+    "reco",
+    "vuepress",
+    "zizfg"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  }
 }
