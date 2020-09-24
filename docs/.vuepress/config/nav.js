@@ -2,14 +2,14 @@ module.exports = [
   { text: '首页', link: '/' },
   {
     text: '前端',
-    link: '/note/fe/',
+    // link: '/note/fe/',
     items: [
       { text: '建立自己的知识体系', link: '/pages/b315f9/' },
       {
         text: '知识体系',
         items: [
-          { text: 'JavaScript进阶', link: '/pages/7264d1/' },
-          { text: 'HTML', link: '/pages/ec8bc5/' },
+          { text: 'JavaScript进阶', link: '/pages/901f35/' },
+          { text: 'HTML', link: '/pages/ec8bc2/' },
           { text: 'CSS进阶', link: '/pages/ec8bc5/' },
         ],
       },
@@ -35,7 +35,12 @@ module.exports = [
   },
   {
     text: '更多',
-    items: [{ text: '博客建设', link: '/pages/16e149/' }],
+    items: [
+      {
+        text: '博客建设',
+        // link: '/pages/16e149/',
+      },
+    ],
   },
   {
     text: '索引',
