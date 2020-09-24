@@ -38,7 +38,7 @@ module.exports = [
     items: [
       {
         text: '博客建设',
-        // link: '/pages/16e149/',
+        link: '/pages/16e149/',
       },
     ],
   },
