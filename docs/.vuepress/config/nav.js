@@ -26,12 +26,8 @@ module.exports = [
   },
 
   {
-    text: '收藏',
-    items: [
-      { text: '文章', link: '/pages/af1346/' },
-      { text: '工具', link: '/pages/47fdcc/' },
-      { text: '网站', link: '/pages/d9f9a3/' },
-    ],
+    text: '资源',
+    link: '/resource/',
   },
   {
     text: '更多',
@@ -42,6 +38,8 @@ module.exports = [
       },
     ],
   },
+  { text: '留言板', link: '/messageBoard/' },
+  { text: '关于', link: '/about/' },
   {
     text: '索引',
     items: [
@@ -59,6 +57,4 @@ module.exports = [
       },
     ],
   },
-  { text: '留言板', link: '/messageBoard/' },
-  { text: '关于', link: '/about/' },
 ];

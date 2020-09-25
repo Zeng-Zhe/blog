@@ -23,8 +23,32 @@ Boolean(''); //false
 //#endregion boolean
 
 // 原始值-> 数字
+console.log('start to number');
 //#region number
+console.log(Number()); // +0
 
+//undefined 和 null
+console.log(Number(undefined)); //NaN
+console.log(Number(null)); // +0
+
+//布尔值
+console.log(Number(true)); // 1
+console.log(Number(false)); // 0
+
+//字符串
+console.log(Number('123')); // 123
+console.log(Number('-123')); // -213
+console.log(Number('12.3')); // 12.3
+console.log(Number('00000000123')); // 123
+console.log(Number('-00000000123')); // -123
+
+//16进制
+console.log(Number('0x11')); // 17
+//8进制
+console.log(Number('0o17')); // 17
+
+//空字符串
+console.log(Number(''));
 //#endregion number
 
 //原始值 -> 字符
@@ -68,21 +92,21 @@ Boolean(new Boolean()); //true
 !!new Boolean(); //true
 
 //#endregion objectToBool
-console.log(!'0' == '0'); //false true
-console.log(!'' == 1); //true
-console.log('' == 0); //true
-console.log(!'a' == 0); //true
-console.log(![] == []); //false true
-console.log(![] == 0); // true
-console.log([] == 0); //false true
-console.log(!![] == [1]); //true
-console.log(!'' == [1]); //true
-console.log('' == !'a'); //true
-console.log(!'' == ''); //false
-console.log(null == []); //false
+// console.log(!'0' == '0'); //false true
+// console.log(!'' == 1); //true
+// console.log('' == 0); //true
+// console.log(!'a' == 0); //true
+// console.log(![] == []); //false true
+// console.log(![] == 0); // true
+// console.log([] == 0); //false true
+// console.log(!![] == [1]); //true
+// console.log(!'' == [1]); //true
+// console.log('' == !'a'); //true
+// console.log(!'' == ''); //false
+// console.log(null == []); //false
 
-console.log(null == ![]); //true false
-console.log(null == false); //true false
-console.log(null == true); //false
+// console.log(null == ![]); //true false
+// console.log(null == false); //true false
+// console.log(null == true); //false
 
 // console.log('a' > null); //false
