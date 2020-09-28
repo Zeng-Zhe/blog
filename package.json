@@ -14,11 +14,14 @@
   "devDependencies": {
     "nodemon": "^2.0.4",
     "vuepress": "^1.0.0-rc.1",
-    "vuepress-plugin-yuque": "^0.6.1",
     "vuepress-plugin-comment": "^0.7.3",
-    "vuepress-theme-vdoing": "^1.4.4"
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-plugin-yuque": "^0.6.1",
+    "vuepress-theme-vdoing": "^1.5.0"
   },
   "dependencies": {
+    "prism-theme-one-dark": "^1.0.0",
+    "vuepress-plugin-demo-block": "^0.7.2",
     "vuepress-theme-reco": "^1.5.5"
   }
 }
