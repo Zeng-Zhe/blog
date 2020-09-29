@@ -32,6 +32,7 @@ person.sayName(); // TypeError
 function New() {
   //创建对象
   let obj = {};
+
   //设置__proto__
 }
 //#endregion 03

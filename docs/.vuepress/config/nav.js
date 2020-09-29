@@ -33,6 +33,10 @@ module.exports = [
     text: '更多',
     items: [
       {
+        text: '面试',
+        link: '/more/3713c6/',
+      },
+      {
         text: '博客建设',
         link: '/pages/16e149/',
       },

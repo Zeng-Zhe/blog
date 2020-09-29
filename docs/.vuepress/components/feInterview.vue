@@ -5,7 +5,7 @@
       <h3>{{ response.dToday }}</h3>
       <ul class="today-interview">
         <li v-for="item in response.today">
-          <h4>{{ item.label }}</h4>
+          <span class="label">[{{ item.label }}]</span>
           {{ item.title }}
         </li>
       </ul>
@@ -70,6 +70,12 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.label {
+  font-weight: bold;
+}
+.fe-interview {
+  font-size: 18px;
 }
 </style>
 
