@@ -20,7 +20,7 @@ module.exports = {
     search: true,
     searchMaxSuggestions: 10,
     repo: 'https://github.com/Zeng-Zhe', // 添加 github 链接
-    sidebarDepth: 2,
+    sidebarDepth: 4,
     blogger: {
       // 博主信息，显示在首页侧边栏
       avatar:
@@ -39,7 +39,11 @@ module.exports = {
     sidebar: 'structuring',
     subSidebar: 'auto',
     sidebarDepth: 4,
-
+    footer: {
+      // 页脚信息
+      createYear: 2020, // 博客创建年份
+      copyrightInfo: 'Gorvey', // 博客版权信息，支持a标签
+    },
     valineConfig: {
       appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz', // your appId
       appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc', // your appKey

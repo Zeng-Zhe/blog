@@ -22,9 +22,21 @@ module.exports = [
           },
         ],
       },
+      {
+        text: '数据结构和算法',
+        link: '/pages/11a306/',
+      },
     ],
   },
-
+  {
+    text: '框架和库',
+    items: [
+      {
+        text: 'underscore源码分析',
+        link: '/pages/122adc/',
+      },
+    ],
+  },
   {
     text: '资源',
     link: '/resource/',

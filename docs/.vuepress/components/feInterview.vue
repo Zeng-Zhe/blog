@@ -1,5 +1,5 @@
 <template>
-  <div class="fe-interview">
+  <div class="fe-interview" v-if="show">
     <template v-if="response">
       <h2>今日试题</h2>
       <h3>{{ response.dToday }}</h3>
@@ -40,6 +40,7 @@ export default {
       path: '',
       response: null,
       loading: false,
+      show: false,
     };
   },
   methods: {
@@ -59,8 +60,12 @@ export default {
     },
   },
   created() {
-    this.path = 'http://api.h-camel.com/api?mod=interview&ctr=issues&act=today';
-    this.requestToday();
+    if (process.env.NODE_ENV === 'development') {
+      this.show = true;
+      this.path =
+        'http://api.h-camel.com/api?mod=interview&ctr=issues&act=today';
+      this.requestToday();
+    }
   },
 };
 </script>
