@@ -47,11 +47,11 @@ export default {
     requestToday() {
       this.loading = true;
       fetch(this.path)
-        .then(res => {
+        .then((res) => {
           console.log(res);
           return res.json();
         })
-        .then(data => {
+        .then((data) => {
           if (data.result) {
             this.response = data.result;
             this.loading = false;
