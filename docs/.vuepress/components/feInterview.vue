@@ -7,6 +7,7 @@
         <li v-for="item in response.today">
           <span class="label">[{{ item.label }}]</span>
           {{ item.title }}
+          <p v-if="item.body">{{ item.body }}</p>
         </li>
       </ul>
     </template>
@@ -47,11 +48,11 @@ export default {
     requestToday() {
       this.loading = true;
       fetch(this.path)
-        .then((res) => {
+        .then(res => {
           console.log(res);
           return res.json();
         })
-        .then((data) => {
+        .then(data => {
           if (data.result) {
             this.response = data.result;
             this.loading = false;
