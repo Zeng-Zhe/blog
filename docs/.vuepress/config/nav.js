@@ -46,7 +46,7 @@ module.exports = [
     items: [
       {
         text: '面试',
-        link: '/more/3713c6/',
+        link: '/pages/faf75f/',
       },
       {
         text: '博客建设',

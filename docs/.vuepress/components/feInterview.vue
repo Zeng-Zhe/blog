@@ -8,6 +8,14 @@
           <span class="label">[{{ item.label }}]</span>
           {{ item.title }}
           <p v-if="item.body">{{ item.body }}</p>
+
+          <a
+            target="_blank"
+            :href="
+              `https://github.com/haizlin/fe-interview/issues/${item.issuesId}`
+            "
+            >前往原文</a
+          >
         </li>
       </ul>
     </template>

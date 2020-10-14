@@ -7,3 +7,5 @@ let obj = { foo: 'bar' };
 
 console.log(`${num},${str},${bool},${nu},${ud},${obj}`);
 console.log(num + str + bool + nu + ud + obj);
+
+window.name = '123';

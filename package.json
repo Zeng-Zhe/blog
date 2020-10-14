@@ -12,10 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
+    "sass-loader": "^10.0.3",
     "vuepress": "^1.6.0",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-plugin-element-tabs": "^0.2.8",
     "vuepress-plugin-yuque": "^0.6.1",
     "vuepress-theme-vdoing": "^1.5.0"
   },
