@@ -63,6 +63,6 @@ module.exports = {
       },
     ],
     ['demo-container'],
-    ['vuepress-plugin-element-tabs'],
+    // ['vuepress-plugin-element-tabs'],
   ],
 };
