@@ -65,8 +65,13 @@ export default {
 ::: center
 
 ## ${item.title}
+
 ${item.body ? item.body : ''}
 :::
+
+<a target="_blank" href="https://github.com/haizlin/fe-interview/issues/${
+        item.issuesId
+      }">前往原文</a>
       `;
       new Promise(resolve => {
         this.copyData = ret;

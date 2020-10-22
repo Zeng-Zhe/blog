@@ -52,3 +52,15 @@
   console.log(arr);
   //#endregion 03
 })();
+
+(function() {
+  //使用js写一个方法，使得数组的某个元素置顶
+  //#region 04
+  const bringToTop = (arr, index) => [
+    arr[index],
+    ...arr.filter((_, i) => i !== index),
+  ];
+  let result = bringToTop([1, 2, 3, 4, 5], 4);
+  console.log(result); //[ 5, 1, 2, 3, 4 ]
+  //#endregion 04
+})();
