@@ -32,11 +32,23 @@
 (function() {
   //#region 02
   function isEqual(arr) {
-    return arr.every(n, i => i === 0 || n === arr[i - 1]);
+    return arr.every((n, i) => i === 0 || n === arr[i - 1]);
   }
   let arr = [1, 1, 1, 1];
   let arr1 = [1, 1, 1, 3];
   console.log(isEqual(arr));
   console.log(isEqual(arr1));
   //#endregion 02
+})();
+
+(function() {
+  //使用js写个方法，使得数组的两个元素互换，要求高性能
+  //#region 03
+  function swap(arr, i1, i2) {
+    [arr[i1], arr[i2]] = [arr[i2], arr[i1]];
+  }
+  let arr = [1, 2, 3];
+  swap(arr, 0, 2);
+  console.log(arr);
+  //#endregion 03
 })();

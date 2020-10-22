@@ -1,8 +1,7 @@
 <template>
   <div class="fe-interview" v-if="show">
     <template v-if="response">
-      <h2>今日试题</h2>
-      <h3>{{ response.dToday }}</h3>
+      <h2>今日试题-{{ response.dToday }}</h2>
       <ul class="today-interview">
         <li v-for="item in response.today">
           <span class="label">[{{ item.label }}]</span>
@@ -16,8 +15,13 @@
             "
             >前往原文</a
           >
+          <a @click="copy(item)">点击复制</a>
         </li>
       </ul>
+      <textarea v-model="copyData" ref="input" id="copyInput" />
+      <div class="custom-block tip" v-show="copySuccess">
+        <p>复制成功</p>
+      </div>
     </template>
     <div v-show="loading" class="loading">
       <span class="loadingText">今日试题加载中</span>
@@ -46,13 +50,40 @@
 export default {
   data() {
     return {
+      copyData: '',
       path: '',
       response: null,
       loading: false,
       show: false,
+      copySuccess: false,
     };
   },
   methods: {
+    copy(item) {
+      console.log(item);
+      let ret = `
+::: center
+
+## ${item.title}
+${item.body ? item.body : ''}
+:::
+      `;
+      new Promise(resolve => {
+        this.copyData = ret;
+        resolve(this.copyData);
+      })
+        .then(res => {
+          return this.$refs.input.select();
+        })
+        .then(res => {
+          if (document.execCommand('Copy', 'false', null)) {
+            this.copySuccess = true;
+            setTimeout(() => {
+              this.copySuccess = false;
+            }, 4 * 1000);
+          }
+        });
+    },
     requestToday() {
       this.loading = true;
       fetch(this.path)
@@ -80,6 +111,10 @@ export default {
 </script>
 
 <style scoped>
+#copyInput {
+  position: relative;
+  top: -10000px;
+}
 .loading {
   display: flex;
   align-items: center;
@@ -90,6 +125,9 @@ export default {
 }
 .fe-interview {
   font-size: 18px;
+}
+.fe-interview a {
+  cursor: pointer;
 }
 </style>
 
