@@ -14,7 +14,10 @@
     "vuepress",
     "zizfg"
   ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.markdownlint": true
+  // }
+  "[markdown]": {
+    "editor.quickSuggestions": true
   }
 }
