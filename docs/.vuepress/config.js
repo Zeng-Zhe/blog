@@ -4,7 +4,8 @@ module.exports = {
   description: 'Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。',
   dest: 'public', // 设置输出目录
   base: '/', // 设置站点根路径
-  theme: 'vdoing',
+    theme: 'vdoing',
+  // theme: require.resolve("../../../vuepress-theme-vdoing/theme-vdoing"),
   port: '0.0.0.0',
   evergreen: true, //禁止兼容低版本浏览器
   locales: {
@@ -59,6 +60,7 @@ module.exports = {
           appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz',
           appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc',
           path: '<%- frontmatter.commentid || frontmatter.permalink %>',
+          visitor: true, //阅读量统计 https://valine.js.org/visitor.html
         },
       },
     ],
