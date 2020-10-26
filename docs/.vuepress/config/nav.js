@@ -32,8 +32,14 @@ module.exports = [
     text: '框架和库',
     items: [
       {
-        text: 'underscore源码分析',
-        link: '/pages/122adc/',
+        text: '源码分析',
+        link: '/pages/08f8ee/',
+        items: [
+          {
+            text: 'underscore源码分析',
+            link: '/pages/122adc/',
+          },
+        ],
       },
     ],
   },
