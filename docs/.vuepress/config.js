@@ -59,6 +59,7 @@ module.exports = {
           appId: 'ljDhFCYbJztk72HHbFSg6rzY-gzGzoHsz',
           appKey: '4Ibfb6Dk0qHG8JlpvjTFttBc',
           path: '<%- frontmatter.commentid || frontmatter.permalink %>',
+          visitor: true, //阅读量统计 https://valine.js.org/visitor.html
         },
       },
     ],
