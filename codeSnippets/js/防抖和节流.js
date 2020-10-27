@@ -9,10 +9,11 @@ export function debounce(func, wait = 500, immediate) {
         timer = null;
       }, wait);
       func.apply(context, ...arguments);
+      !immediate;
+    } else {
+      timer = setTimeout(() => {
+        func.apply(context, ...arguments);
+      }, wait);
     }
-
-    timer = setTimeout(() => {
-      func.apply(context, ...arguments);
-    }, wait);
   };
 }
