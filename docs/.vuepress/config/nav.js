@@ -32,6 +32,10 @@ module.exports = [
     text: '框架和库',
     items: [
       {
+        text: 'vue3.x学习笔记',
+        link: "/pages/a60864/"
+      },
+      {
         text: '源码分析',
         link: '/pages/08f8ee/',
         items: [
