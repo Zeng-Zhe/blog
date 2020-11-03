@@ -33,7 +33,7 @@ module.exports = [
     items: [
       {
         text: 'vue3.x学习笔记',
-        link: "/pages/a60864/"
+        link: '/pages/a60864/',
       },
       {
         text: '源码分析',
@@ -64,8 +64,12 @@ module.exports = [
       },
     ],
   },
-  { text: '留言板', link: '/messageBoard/' },
+  // { text: '留言板', link: '/messageBoard/' },
   { text: '关于', link: '/about/' },
+  {
+    text: '博客汇总',
+    link: '/library/',
+  },
   {
     text: '索引',
     items: [
