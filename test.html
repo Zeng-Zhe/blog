@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <body>
+    <script>
+      function debounce(func, delay) {
+        let timer = null;
 
-<body>
-  <script>
-
-    function debounce(func, delay) {
-      let timer = null;
-
-      return function () {
-        console.log(func);
-        clearTimeout(timer)
-        timer = setTimeout(func, delay)
+        return function() {
+          var context = this;
+          clearTimeout(timer);
+          timer = setTimeout(function() {
+            console.log(context);
+            func.apply(context, ...arguments);
+          }, delay);
+        };
       }
-    }
-    window.addEventListener('click', debounce(() => { console.log('执行') }, 1000))
-  </script>
-</body>
-
+      window.addEventListener(
+        'click',
+        debounce(function(e) {
+          // debugger;
+          console.log('执行');
+          console.log(e);
+        }, 1000)
+      );
+    </script>
+  </body>
 </html>

@@ -19,5 +19,6 @@
   // }
   "[markdown]": {
     "editor.quickSuggestions": true
-  }
+  },
+  "svn.ignoreMissingSvnWarning": true
 }
