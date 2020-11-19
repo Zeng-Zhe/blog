@@ -14,3 +14,20 @@
 //   background-color: transparent !important
 // }
 // @require '~vuepress-plugin-tabs/dist/themes/default.styl'
+
+.theme-container:after{
+     content: '';
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+    background: url(https://cdn.jsdelivr.net/gh/Gorvey/image_store/blog/BG_day.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transition: opacity .5s ease;
+}
