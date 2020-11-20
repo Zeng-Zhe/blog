@@ -1,0 +1,52 @@
+<mxfile host="65bd71144e" modified="2020-11-08T05:20:23.006Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.50.1 Chrome/83.0.4103.122 Electron/9.2.1 Safari/537.36" version="13.6.5" etag="lyHtU1uhX_VYXiLh43Lg">
+    <diagram id="0G9qKfQM1nbr2nKXTNzW" name="第 1 页">
+        <mxGraphModel dx="685" dy="512" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="13" value="内联样式" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;fillColor=#5D7F99;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="475" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="4" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#23445D;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="465" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="！important" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;fillColor=#61C6CE;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="540" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="5" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#12AAB5;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="530" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="group;rounded=0;glass=0;" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="230" y="204" width="254" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="标签选择器" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;fillColor=#64BBE2;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry x="30" y="76" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="1" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#10739E;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry y="66" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="类选择器，属性选择器" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;fillColor=#F8C382;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry x="30" y="141" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="2" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#F2931E;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry y="131" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="ID选择器" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;fillColor=#F08E81;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry x="30" y="206" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="3" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;fillColor=#AE4132;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;" vertex="1" parent="19">
+                    <mxGeometry y="196" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="通配符，选择符，逻辑伪类" style="shape=rect;rounded=1;whiteSpace=wrap;html=1;shadow=0;strokeColor=none;arcSize=30;fontSize=14;spacingLeft=42;fontStyle=1;fontColor=#FFFFFF;align=left;sketch=0;fillColor=#56CAF5;" vertex="1" parent="19">
+                    <mxGeometry x="30" y="10" width="220" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="0" style="shape=ellipse;perimeter=ellipsePerimeter;fontSize=22;fontStyle=1;shadow=0;strokeColor=#ffffff;strokeWidth=4;fontColor=#ffffff;align=center;rounded=0;sketch=0;fillColor=#16A1DE;" vertex="1" parent="19">
+                    <mxGeometry width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;glass=0;sketch=0;strokeColor=#006EAF;fontColor=#ffffff;fillColor=none;strokeWidth=4;dashed=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="194" width="270" height="270" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

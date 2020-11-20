@@ -12,16 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.29.0",
-    "sass-loader": "^10.0.5",
-    "vuepress": "^1.7.1",
+    "vuepress": "1.5.2",
     "vuepress-plugin-comment": "^0.7.3",
     "vuepress-plugin-demo-container": "^0.2.0",
     "vuepress-theme-vdoing": "^1.5.1"
   },
   "dependencies": {
-    "element-ui": "^2.13.2",
-    "vuepress-plugin-demo-block": "^0.7.2",
-    "vuepress-theme-reco": "^1.5.7"
+    "element-ui": "^2.14.1"
   }
 }

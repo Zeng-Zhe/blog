@@ -1,42 +1,18 @@
-class myPromise {
-  constructor(executor) {
-    this.status = 'PENDING';
-    this.value = '';
-    this.reason = '';
-
-    let resolve = value => {
-      this.status = 'RESOLVED';
-      this.value = value;
-    };
-
-    let reject = reason => {
-      this.status = 'REJECTED';
-      this.reason = reason;
-    };
+export class Promise {
+  constructor(fn) {
 
     try {
-      executor(resolve, reject);
+      fn(this.resolve, this.reject)
     } catch (e) {
-      reject(e);
+      this.reject(e)
     }
   }
-  then(onFulfilled, onrejected) {
-    if (this.status === 'RESOLVED') {
-      onFulfilled();
-    }
+  resolve() {
+
   }
+
+
 }
+Promise.prototype.then = function (onResolved) {
 
-let test = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    resolve('someValue');
-  }, 1000);
-});
-
-test.then(res => {
-  console.log('then1');
-});
-test.then(res => {
-  console.log('then2');
-});
-console.log(test);
+}
